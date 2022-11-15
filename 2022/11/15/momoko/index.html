@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="/images/favicon.ico">
+  
+  <title>桃桃Bot帮助文档 | Déjà Vu</title>
+  <meta name="author" content="Gas Halo" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="NoneBot, OneBot, Python, go-cqhttp, 桃桃Bot" />
+  
+  <meta name="description" content="桃桃Bot是基于NoneBot2和go-cqhttp的QQ群聊娱乐机器人, 借(chao)鉴(xi)了大佬们的代码，实现了一些对群友的娱乐功能和实用功能（大概">
+<meta property="og:type" content="article">
+<meta property="og:title" content="桃桃Bot帮助文档">
+<meta property="og:url" content="https://deja-vu.eu.org/2022/11/15/momoko/index.html">
+<meta property="og:site_name" content="Déjà Vu">
+<meta property="og:description" content="桃桃Bot是基于NoneBot2和go-cqhttp的QQ群聊娱乐机器人, 借(chao)鉴(xi)了大佬们的代码，实现了一些对群友的娱乐功能和实用功能（大概">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://deja-vu.eu.org/images/favicon.ico">
+<meta property="article:published_time" content="2022-11-15T20:00:00.000Z">
+<meta property="article:modified_time" content="2022-11-15T14:14:44.890Z">
+<meta property="article:author" content="Gas Halo">
+<meta property="article:tag" content="桃桃Bot">
+<meta property="article:tag" content="NoneBot">
+<meta property="article:tag" content="OneBot">
+<meta property="article:tag" content="go-cqhttp">
+<meta property="article:tag" content="Python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://deja-vu.eu.org/images/favicon.ico">
+  
+  <!-- 站点验证相关 -->
+  
+    
+      <meta name="google-site-verification" content="jSR3ZGhJEBo1VTj6KNJw7iY0bsUu8DryvFrXvT-hPA4" />
+    
+    
+    
+      <meta name="msvalidate.01" content="860F52BEC86D2D694B7203EB97CD7832" />
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/light.min.css" media="all"></script>
+  
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/banner.webp');
+      }
+    
+    
+      @media(min-width:768px) {
+        body.custom-background {
+          background-image: url('/images/bg.webp');
+        }
+      }
+    
+  </style>
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                    
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/archives/"><i class="fa fa-file"></i>档案馆</a></li>
+                                        
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">Déjà Vu</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>Déjà Vu</h2> <br />
+                        <span>似曾相识</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://deja-vu.eu.org/2022/11/15/momoko/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">桃桃Bot帮助文档</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2022-11-15T20:00:00.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2022-11-15</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">Gas Halo</span>
+                </li>
+                <li>
+                    <i class="fa fa-edit"></i> 
+                    
+                    
+                        ~4.06K
+                    
+                    字
+                </li>
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1668521684890"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            
+                <div class="kratos-post-inner-toc toc-div-class" >
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A1%83%E6%A1%83Bot"><span class="toc-number">1.</span> <span class="toc-text">桃桃Bot</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#NoneBot2"><span class="toc-number">2.</span> <span class="toc-text">NoneBot2</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E"><span class="toc-number">2.1.</span> <span class="toc-text">声明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E5%88%97%E8%A1%A8"><span class="toc-number">2.2.</span> <span class="toc-text">功能列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#PicSearch-%E6%90%9C%E5%9B%BE"><span class="toc-number">2.2.1.</span> <span class="toc-text">PicSearch  搜图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#anti-abuse-%E5%98%B4%E8%87%AD%E5%B1%8F%E8%94%BD"><span class="toc-number">2.2.2.</span> <span class="toc-text">anti_abuse  嘴臭屏蔽</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#anti-flash-%E5%8F%8D%E9%97%AA%E7%85%A7"><span class="toc-number">2.2.3.</span> <span class="toc-text">anti_flash  反闪照</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#anti-recall-%E5%8F%8D%E6%92%A4%E5%9B%9E"><span class="toc-number">2.2.4.</span> <span class="toc-text">anti_recall  反撤回</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#bhbdm-%E4%B8%8D%E4%BC%9A%E7%99%BE%E5%BA%A6%E4%B9%88%EF%BC%9F"><span class="toc-number">2.2.5.</span> <span class="toc-text">bhbdm  不会百度么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#caiyun-ai-AI%E7%BB%AD%E5%86%99"><span class="toc-number">2.2.6.</span> <span class="toc-text">caiyun_ai  AI续写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DirectLinker-%E7%BE%A4%E6%96%87%E4%BB%B6%E7%9B%B4%E9%93%BE%E6%8F%90%E5%8F%96"><span class="toc-number">2.2.7.</span> <span class="toc-text">DirectLinker  群文件直链提取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#echo-%E8%AF%B4"><span class="toc-number">2.2.8.</span> <span class="toc-text">echo  说</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#eventdone-%E5%A5%BD%E5%8F%8B%E6%B7%BB%E5%8A%A0%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86"><span class="toc-number">2.2.9.</span> <span class="toc-text">eventdone  好友添加事件处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#fake-msg-%E4%BC%AA%E9%80%A0%E5%90%88%E5%B9%B6%E8%BD%AC%E5%8F%91%E6%B6%88%E6%81%AF"><span class="toc-number">2.2.10.</span> <span class="toc-text">fake_msg  伪造合并转发消息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#look-like-%E4%BD%A0%E7%9C%8B%E6%88%91%E5%83%8F%E4%BA%BA%E5%90%97"><span class="toc-number">2.2.11.</span> <span class="toc-text">look_like  你看我像人吗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mockingbird-%E8%AE%A9bot%E5%8F%91%E8%AF%AD%E9%9F%B3"><span class="toc-number">2.2.12.</span> <span class="toc-text">mockingbird  让bot发语音</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#blacklist-%E9%BB%91%E5%90%8D%E5%8D%95"><span class="toc-number">2.2.13.</span> <span class="toc-text">blacklist  黑名单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rss-%E8%AE%A2%E9%98%85"><span class="toc-number">2.2.14.</span> <span class="toc-text">rss  订阅</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#simplemusic-%E7%82%B9%E6%AD%8C"><span class="toc-number">2.2.15.</span> <span class="toc-text">simplemusic  点歌</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#smart-reply-AI%E8%81%8A%E5%A4%A9"><span class="toc-number">2.2.16.</span> <span class="toc-text">smart_reply  AI聊天</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#status"><span class="toc-number">2.2.17.</span> <span class="toc-text">status</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tarot-%E6%8A%BD%E5%A1%94%E7%BD%97%E7%89%8C"><span class="toc-number">2.2.18.</span> <span class="toc-text">tarot  抽塔罗牌</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#wordbank2-%E4%BD%A0%E9%97%AE%E6%88%91%E7%AD%94"><span class="toc-number">2.2.19.</span> <span class="toc-text">wordbank2  你问我答</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#withdraw-%E6%92%A4%E5%9B%9E"><span class="toc-number">2.2.20.</span> <span class="toc-text">withdraw  撤回</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E6%96%B9%E5%BC%8F"><span class="toc-number">2.3.</span> <span class="toc-text">部署方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%9A%A0%E6%B3%A8%E6%84%8F"><span class="toc-number">2.3.1.</span> <span class="toc-text">⚠注意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%9A%A0%E5%96%9C%E6%8A%A5"><span class="toc-number">2.3.2.</span> <span class="toc-text">⚠喜报</span></a></li></ol></li></ol></li></ol>
+                </div>
+            
+            <hr />
+            <div itemprop="articleBody"><h1 id="桃桃Bot"><a href="#桃桃Bot" class="headerlink" title="桃桃Bot"></a>桃桃Bot</h1><p>此项目是基于 <a target="_blank" rel="noopener" href="https://github.com/nonebot/nonebot2">Nonebot2</a> 和 <a target="_blank" rel="noopener" href="https://github.com/Mrs4s/go-cqhttp">go-cqhttp</a> 的QQ群聊娱乐机器人<br>借(chao)鉴(xi)了大佬们的代码，实现了一些对群友的娱乐功能和实用功能（大概  </p>
+<div>
+<a target="_blank" rel="noopener" href="https://https://v2.nonebot.dev">
+    <img src="https://img.shields.io/badge/nonebot-2.0.0-red.svg" alt="NoneBot">
+</a>
+<a target="_blank" rel="noopener" href="https://onebot.adapters.nonebot.dev">
+    <img src="https://img.shields.io/badge/onebot-v11-black.svg" alt="OneBot">
+</a>
+<a target="_blank" rel="noopener" href="https://github.com/Mrs4s/go-cqhttp">
+    <img src="https://img.shields.io/badge/gocq-1.0.0-blueviolet.svg" alt="go-cqhttp">
+</a>
+<a href="./LICENSE">
+    <img src="https://img.shields.io/github/license/tkgs0/Momoko.svg" alt="license">
+</a>
+<a target="_blank" rel="noopener" href="https://www.python.org">
+    <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="python">
+</a>
+</div>
+
+  
+<p>项目地址: <a target="_blank" rel="noopener" href="https://github.com/tkgs0/Momoko">https://github.com/tkgs0/Momoko</a></p>
+<h1 id="NoneBot2"><a href="#NoneBot2" class="headerlink" title="NoneBot2"></a>NoneBot2</h1><div>
+<a target="_blank" rel="noopener" href="https://v2.nonebot.dev">
+    <img style="height: 150px;width: 150px;" src="https://camo.githubusercontent.com/0ef71e86056da694c540790aa4a4e314396884d6c4fdb95362a7538b27a1b034/68747470733a2f2f76322e6e6f6e65626f742e6465762f6c6f676f2e706e67" alt="NoneBot">
+</a>
+
+<p>非常 [ <strong><a target="_blank" rel="noopener" href="https://github.com/nonebot/nonebot2">NICE</a></strong> ] 的Bot框架</p>
+</div>
+
+
+<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p>此项目仅用于学习交流，不可商用以及非法用途  </p>
+<h2 id="功能列表"><a href="#功能列表" class="headerlink" title="功能列表"></a>功能列表</h2><h3 id="PicSearch-搜图"><a href="#PicSearch-搜图" class="headerlink" title="PicSearch  搜图"></a>PicSearch  搜图</h3><p>抄自 <a target="_blank" rel="noopener" href="https://github.com/NekoAria">NekoAria佬</a> 的 <a target="_blank" rel="noopener" href="https://github.com/NekoAria/YetAnotherPicSearch">YetAnotherPicSearch</a><br>将原插件的 <strong>搜图</strong> 改为 <strong>搜图#</strong> ，增加了隐蔽性，防止误触（x<br>需要在 <code>.env.dev</code> 文件中添加saucenao的apikey：  </p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">SAUCENAO_API_KEY</span>=xxx</span><br></pre></td></tr></table></figure>
+<p>除此之外请参考原插件 <a target="_blank" rel="noopener" href="https://github.com/NekoAria/YetAnotherPicSearch/blob/main/docs/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.md">▶使用方法️️</a></p>
+<h3 id="anti-abuse-嘴臭屏蔽"><a href="#anti-abuse-嘴臭屏蔽" class="headerlink" title="anti_abuse  嘴臭屏蔽"></a>anti_abuse  嘴臭屏蔽</h3><p><strong>被动插件</strong><br>检测到有用户@机器人并嘴臭时将其临时屏蔽(bot重启后失效)<br>当bot为群管理时会请对方喝昏睡红茶<br>饮用了昏睡红茶的用户不会进临时黑名单  </p>
+<p><strong>指令:</strong>  </p>
+<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line">添加/删除屏蔽词 词<span class="number">1</span> 词<span class="number">2</span> 词<span class="number">3</span> ...</span><br><span class="line"></span><br><span class="line">查看临时黑名单</span><br><span class="line"></span><br><span class="line">解除屏蔽 qq1 qq2 qq3 ...</span><br></pre></td></tr></table></figure>
+
+<p>P.S. <code>解除屏蔽</code> 可以解除临时屏蔽, 也可以解除禁言(当然, 需要bot为群管理).  </p>
+<p>你说从聊天界面查看屏蔽词库? 噢, 我亲爱的老伙计, 你怕是疯了!  </p>
+<h3 id="anti-flash-反闪照"><a href="#anti-flash-反闪照" class="headerlink" title="anti_flash  反闪照"></a>anti_flash  反闪照</h3><p>抄自 <a target="_blank" rel="noopener" href="https://github.com/MinatoAquaCrews">KafCoppelia佬</a> 的 <a target="_blank" rel="noopener" href="https://github.com/MinatoAquaCrews/nonebot_plugin_antiflash">AntiFlash</a>  </p>
+<div class="xControl">
+    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>使用方法(点击展开)</span></div>
+    <div class="xContent"><div class="inner">
+        <p>在<code>.env.dev</code>内设置：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">ANTI_FLASH_ON=true                          <span class="comment"># 全局开关</span></span><br><span class="line">ANTI_FLASH_GROUP=[<span class="string">&quot;123456789&quot;</span>, <span class="string">&quot;987654321&quot;</span>] <span class="comment"># 默认开启的群聊，但可通过指令开关</span></span><br><span class="line">ANTI_FLASH_PATH=<span class="string">&quot;your-path-to-config.json&quot;</span>  <span class="comment"># 配置文件路径，默认同插件代码路径</span></span><br></pre></td></tr></table></figure>
+
+<p><code>ANTI_FLASH_GROUP</code>会在每次初始化时写入配置文件，在群组启用反闪照，可通过指令更改。  </p>
+<p><strong>修改</strong> 配置文件即读即改，可后台修改。  </p>
+<p><strong>功能:</strong></p>
+<ol>
+<li>全局开关<strong>仅超管</strong>配置，不支持指令修改全局开关；  </li>
+<li>各群聊均配置开关，需<strong>管理员及超管权限</strong>进行修改；</li>
+</ol>
+<p><strong>命令:</strong><br>开启&#x2F;启用&#x2F;禁用反闪照</p>
+ 
+    </div></div>
+    </div>
+
+
+<h3 id="anti-recall-反撤回"><a href="#anti-recall-反撤回" class="headerlink" title="anti_recall  反撤回"></a>anti_recall  反撤回</h3><p>移植自 <a target="_blank" rel="noopener" href="https://github.com/Kyomotoi">摸佬</a> 的 <a target="_blank" rel="noopener" href="https://github.com/Kyomotoi/ATRI">ATRI</a><br>将检测到的撤回消息转发给超级用户</p>
+<h3 id="bhbdm-不会百度么？"><a href="#bhbdm-不会百度么？" class="headerlink" title="bhbdm  不会百度么？"></a>bhbdm  不会百度么？</h3><p>发送 <code>/百度搜索</code> 加 <code>内容</code> 返回直达链接<br><img style="height: 150px; width: 430px;" src="https://iili.io/6vMyOP.jpg"></p>
+<h3 id="caiyun-ai-AI续写"><a href="#caiyun-ai-AI续写" class="headerlink" title="caiyun_ai  AI续写"></a>caiyun_ai  AI续写</h3><p>抄自 <a target="_blank" rel="noopener" href="https://github.com/MeetWq">wq佬</a> 的 <a target="_blank" rel="noopener" href="https://github.com/noneplugin/nonebot-plugin-caiyunai">caiyunai</a>  </p>
+<div class="xControl">
+    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>使用方法(点击展开)</span></div>
+    <div class="xContent"><div class="inner">
+        <p><strong>配置:</strong></p>
+<p>需要在 <code>.env.dev</code> 文件中添加彩云小梦apikey：</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">CAIYUNAI_APIKEY</span>=xxx</span><br></pre></td></tr></table></figure>
+
+<p>apikey获取：</p>
+<p>前往 <a target="_blank" rel="noopener" href="http://if.caiyunai.com/dream">http://if.caiyunai.com/dream</a> 注册彩云小梦用户；</p>
+<p>注册完成后，F12打开开发者工具；</p>
+<p>在控制台中输入 <code>alert(localStorage.cy_dream_user)</code> ，弹出窗口中的 uid 即为 apikey；</p>
+<p>或者进行一次续写，在 Network 中查看 novel_ai 请求，Payload 中的 uid 项即为 apikey。</p>
+<p><strong>使用:</strong>  </p>
+<figure class="highlight gherkin"><table><tr><td class="code"><pre><span class="line"><span class="meta">@机器人</span> 续写/彩云小梦 xxx</span><br></pre></td></tr></table></figure>
+ 
+    </div></div>
+    </div>
+
+
+<h3 id="DirectLinker-群文件直链提取"><a href="#DirectLinker-群文件直链提取" class="headerlink" title="DirectLinker  群文件直链提取"></a>DirectLinker  群文件直链提取</h3><p>抄自 <a target="_blank" rel="noopener" href="https://github.com/ninthseason">ninthseason</a> 的 <a target="_blank" rel="noopener" href="https://github.com/ninthseason/nonebot-plugin-directlinker">DirectLinker</a><br><strong>使用方法:</strong> <a target="_blank" rel="noopener" href="https://github.com/ninthseason/nonebot-plugin-directlinker#%E7%94%A8%E6%B3%95">▶传送门</a>  </p>
+<h3 id="echo-说"><a href="#echo-说" class="headerlink" title="echo  说"></a>echo  说</h3><p><strong>使用方法:</strong><br><code>@机器人</code> 并加上 <strong>冒号</strong> <code>：</code> 发送你想让机器人说的话</p>
+<figure class="highlight gherkin"><table><tr><td class="code"><pre><span class="line"><span class="meta">@桃桃酱</span> ：xxxxx</span><br></pre></td></tr></table></figure>
+<p>为防止恶意用户滥用导致封号，限制仅超级用户可用</p>
+<h3 id="eventdone-好友添加事件处理"><a href="#eventdone-好友添加事件处理" class="headerlink" title="eventdone  好友添加事件处理"></a>eventdone  好友添加事件处理</h3><p>抄自 <a target="_blank" rel="noopener" href="https://github.com/PadorFelice">PadorFelice佬</a> 的 <a target="_blank" rel="noopener" href="https://github.com/PadorFelice/nonebot_plugin_eventdone">eventdone</a><br><strong>使用方法:</strong><br>私聊发送 <code>同意</code> 加申请人qq号</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">同意 xxxxxxxxx</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="fake-msg-伪造合并转发消息"><a href="#fake-msg-伪造合并转发消息" class="headerlink" title="fake_msg  伪造合并转发消息"></a>fake_msg  伪造合并转发消息</h3><p>移植自 <a target="_blank" rel="noopener" href="https://github.com/Kyomotoi">摸佬</a> 的 <a target="_blank" rel="noopener" href="https://github.com/Kyomotoi/ATRI">ATRI</a><br><strong>使用方法:</strong>  </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/fakemsg</span><br><span class="line">qq号-昵称-消息内容</span><br></pre></td></tr></table></figure>
+<p>示例:  </p>
+<figure class="highlight dns"><table><tr><td class="code"><pre><span class="line">/fakemsg</span><br><span class="line"><span class="number">123456789</span>-桃桃酱-不可以色色</span><br><span class="line"><span class="number">987654321</span>-路人甲-我就要色色</span><br></pre></td></tr></table></figure>
+
+<h3 id="look-like-你看我像人吗"><a href="#look-like-你看我像人吗" class="headerlink" title="look_like  你看我像人吗"></a>look_like  你看我像人吗</h3><p><strong>使用方法:</strong><br><code>@机器人</code> 发送 <code>你看我像</code><br>示例:  </p>
+<figure class="highlight gherkin"><table><tr><td class="code"><pre><span class="line"><span class="meta">@桃桃酱</span> 你看我像人吗？</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="mockingbird-让bot发语音"><a href="#mockingbird-让bot发语音" class="headerlink" title="mockingbird  让bot发语音"></a>mockingbird  让bot发语音</h3><p>抄自 <a target="_blank" rel="noopener" href="https://github.com/AkashiCoin">白毛佬</a> 的 <a target="_blank" rel="noopener" href="https://github.com/AkashiCoin/nonebot_plugin_mockingbird">mockingbird</a><br><strong>使用方法:</strong>  </p>
+<figure class="highlight aspectj"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Bot</span> 说 [你想要bot说的话]</span><br></pre></td></tr></table></figure>
+<p>配置不够的设备使用该功能容易死机，所以修改了权限限制仅超级用户可用。<br>如果需要开放给所有用户使用的话，请将<code>plugins/mockingbird/__init__.py</code>第78行的<code>permission=SUPERUSER,</code>删掉</p>
+<div class="xControl">
+    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>其他操作(点击展开)</span></div>
+    <div class="xContent"><div class="inner">
+        <figure class="highlight livescript"><table><tr><td class="code"><pre><span class="line">显示模型 <span class="comment"># 显示出可供修改的模型</span></span><br><span class="line"><span class="comment"># 修改指令</span></span><br><span class="line">修改模型 [序号]<span class="string">\[模型名称]</span></span><br><span class="line">重载模型 进行模型重载(并没有什么卵用，或许以后内存泄漏解决会有用？)</span><br><span class="line">调整/修改精度 修改语音合成精度</span><br><span class="line">调整/修改句长 修改语音合成最大句长</span><br><span class="line">更新模型 更新模型列表</span><br></pre></td></tr></table></figure>
+ 
+    </div></div>
+    </div>
+
+
+<h3 id="blacklist-黑名单"><a href="#blacklist-黑名单" class="headerlink" title="blacklist  黑名单"></a>blacklist  黑名单</h3><div class="xControl">
+    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>使用方法(点击展开)</span></div>
+    <div class="xContent"><div class="inner">
+        <p>拉黑:  </p>
+<figure class="highlight perl"><table><tr><td class="code"><pre><span class="line">拉黑用户 <span class="keyword">qq</span> qq1 qq2</span><br><span class="line">拉黑群 <span class="keyword">qq</span> qq1 qq2</span><br><span class="line">拉黑所有群</span><br><span class="line">拉黑所有好友</span><br></pre></td></tr></table></figure>
+<p>解禁:  </p>
+<figure class="highlight perl"><table><tr><td class="code"><pre><span class="line">解禁用户 <span class="keyword">qq</span> qq1 qq2</span><br><span class="line">解禁群 <span class="keyword">qq</span> qq1 qq2</span><br><span class="line">解禁所有群</span><br><span class="line">解禁所有好友</span><br></pre></td></tr></table></figure>
+<p>查看黑名单:  </p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">查看用户黑名单</span><br><span class="line">查看群聊黑名单</span><br><span class="line"></span><br><span class="line">重置黑名单</span><br></pre></td></tr></table></figure>
+<p>群内发送 <strong><code>/静默</code></strong>, <strong><code>/响应</code></strong> 可快捷拉黑&#x2F;解禁当前群聊<br><code>拉黑/解禁所有</code> 只对Bot添加的群&#x2F;好友生效  </p>
+ 
+    </div></div>
+    </div>
+
+
+<h3 id="rss-订阅"><a href="#rss-订阅" class="headerlink" title="rss  订阅"></a>rss  订阅</h3><p>抄自 <a target="_blank" rel="noopener" href="https://github.com/Quan666">Quan666</a> 的 <a target="_blank" rel="noopener" href="https://github.com/Quan666/ELF_RSS">ELF_RSS</a><br><strong>使用方法:</strong> <a target="_blank" rel="noopener" href="https://github.com/Quan666/ELF_RSS/blob/2.0/docs/2.0%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.md">▶传送门</a>  </p>
+<h3 id="simplemusic-点歌"><a href="#simplemusic-点歌" class="headerlink" title="simplemusic  点歌"></a>simplemusic  点歌</h3><p>抄自 <a target="_blank" rel="noopener" href="https://github.com/MeetWq">wq佬</a> 的 <a target="_blank" rel="noopener" href="https://github.com/noneplugin/nonebot-plugin-simplemusic">SimpleMusic</a><br><strong>使用方法:</strong>  </p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">点歌<span class="regexp">/qq点歌/</span>网易点歌<span class="regexp">/酷我点歌/</span>酷狗点歌<span class="regexp">/咪咕点歌/</span>b站点歌 + 关键词</span><br></pre></td></tr></table></figure>
+<p>默认为qq点歌</p>
+<h3 id="smart-reply-AI聊天"><a href="#smart-reply-AI聊天" class="headerlink" title="smart_reply  AI聊天"></a>smart_reply  AI聊天</h3><p>抄自 <a target="_blank" rel="noopener" href="https://github.com/Special-Week">Special-Week佬</a> 的 <a target="_blank" rel="noopener" href="https://github.com/Special-Week/nonebot_plugin_smart_reply">SmartReply</a><br><strong>使用方法:</strong><br><code>@机器人</code> 发送你想对机器人说的骚话</p>
+<h3 id="status"><a href="#status" class="headerlink" title="status"></a>status</h3><p>发送 <code>/ping</code> 测试bot应答<br>发送 <code>/status</code> 查看bot设备状态<br>超级用户使用</p>
+<h3 id="tarot-抽塔罗牌"><a href="#tarot-抽塔罗牌" class="headerlink" title="tarot  抽塔罗牌"></a>tarot  抽塔罗牌</h3><p><strong>使用方法:</strong>  </p>
+<figure class="highlight gherkin"><table><tr><td class="code"><pre><span class="line"><span class="meta">@机器人</span> 抽塔罗牌</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="wordbank2-你问我答"><a href="#wordbank2-你问我答" class="headerlink" title="wordbank2  你问我答"></a>wordbank2  你问我答</h3><p>抄自 <a target="_blank" rel="noopener" href="https://github.com/kexue-z">kexue佬</a> 的 <a target="_blank" rel="noopener" href="https://github.com/kexue-z/nonebot-plugin-word-bank2">wordbank2</a><br><strong>使用方法:</strong> <a target="_blank" rel="noopener" href="https://github.com/kexue-z/nonebot-plugin-word-bank2#%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8">▶传送门</a>  </p>
+<h3 id="withdraw-撤回"><a href="#withdraw-撤回" class="headerlink" title="withdraw  撤回"></a>withdraw  撤回</h3><p>回复机器人的消息发送 <code>撤回</code></p>
+<h2 id="部署方式"><a href="#部署方式" class="headerlink" title="部署方式"></a>部署方式</h2><ol>
+<li>安装系统</li>
+<li>安装3.9版本以上的Python</li>
+<li>下载本项目到本地</li>
+</ol>
+<ul>
+<li><strong>需要注意的是: 请确保将本项目放在纯英文的路径下.</strong><br>如果你不知道什么叫做<strong>路径</strong>, 建议你把电脑放进水里泡一下.</li>
+</ul>
+<ol start="4">
+<li>打开本项目所在目录</li>
+<li>打开<strong>隐藏文件</strong> <code>.env.dev</code>, 填写以下信息:</li>
+</ol>
+<div class="xControl">
+    <div class="xHeading"><div class="xIcon"><i class="fa fa-plus"></i></div><span>点击展开</span></div>
+    <div class="xContent"><div class="inner">
+        <figure class="highlight abnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">SUPERUSERS</span><span class="operator">=</span>[<span class="string">&quot;&quot;</span>]</span><br></pre></td></tr></table></figure>
+<p>在引号里填写用于控制bot的超级用户QQ<br>可填写多个 例如: [“123456”,”654321”]  </p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">ANTI_FLASH_GROUP</span>=[<span class="string">&quot;&quot;</span>]</span><br></pre></td></tr></table></figure>
+<p>引号里填写默认开启 反闪照 的群聊, 可留空.<br>可填写多个 例如: [“123456”,”654321”]  </p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">SAUCENAO_API_KEY</span>=<span class="string">&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+<p>在引号里填写你在 <code>saucenao.com</code> 申请到的 <code>apikey</code> , 可留空.  </p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">EXHENTAI_COOKIES</span>=<span class="string">&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+<p>在引号里填写你的 <code>exhentai</code> <code>cookies</code> , 可留空.  </p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">CAIYUNAI_APIKEY</span>=<span class="string">&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+<p>在引号里填写你的 彩云小梦 <code>apikey</code> , 不可留空.<br>如不需要 请删除本项目 <code>plugins</code> 文件夹里面的 <code>caiyun_ai</code> 文件夹  </p>
+ 
+    </div></div>
+    </div>
+<ol start="6">
+<li>在命令行 <code>cd</code> 到本项目的目录</li>
+<li>输入 <code>pip install -r requirements.txt</code> 安装环境依赖</li>
+<li>输入 <code>python bot.py</code> 启动机器人</li>
+<li>另开一个命令行窗口, <code>cd</code> 到本项目下的 <code>gocq</code> 文件夹</li>
+<li>运行适用于你的系统的 <code>go-cqhttp</code> 文件</li>
+</ol>
+<ul>
+<li>你也可以在 <a target="_blank" rel="noopener" href="https://github.com/Mrs4s/go-cqhttp/releases">go-cqhttp</a> 下载最新的<code>go-cqhttp</code> 文件, 并放入该文件夹.</li>
+</ul>
+<ol start="11">
+<li>用 <code>手机QQ</code> 扫码登入</li>
+<li>登入成功后, 用你的 <code>超级用户</code> 账号 给bot发 <code>/ping</code><br>如果bot给你回复 <code>I&#39;m fine</code>, 那么就大功告成了.</li>
+</ol>
+<h3 id="⚠注意"><a href="#⚠注意" class="headerlink" title="⚠注意"></a>⚠注意</h3><p><strong>如果你是第一次使用go-cqhttp, 可能会遇到以下情况:</strong></p>
+<ul>
+<li>登录失败，提示 <code>请在常用的设备上登录</code></li>
+<li>密码没有输错, 帐号未被冻结, 但是提示 <code>密码错误或账号被冻结</code></li>
+</ul>
+<p><strong>你可能需要进行以下步骤:</strong></p>
+<ol>
+<li>将电脑和手机处在同一IP环境下</li>
+</ol>
+<ul>
+<li>比如手机和电脑使用同一个WiFi, 或者电脑连接手机的热点.</li>
+</ul>
+<ol start="2">
+<li>选择扫码登入</li>
+</ol>
+<p><strong>服务器用户同理:</strong></p>
+<ol start="3">
+<li>下载win版的go-cqhttp到自己电脑上</li>
+<li>按照上面的步骤1,2操作</li>
+<li>登入成功后把生成的文件拷到服务器上</li>
+</ol>
+<h3 id="⚠喜报"><a href="#⚠喜报" class="headerlink" title="⚠喜报"></a>⚠喜报</h3><p>你可能会遇到以下问题:</p>
+<ul>
+<li>私聊机器人收得到消息，但是群聊收不到</li>
+</ul>
+<p>此时请查看go-cqhttp的运行窗口, 你可能会看到这样一条消息:</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="symbol">WARNING</span>]: <span class="link">群消息发送失败: 账号可能被风控.</span></span><br></pre></td></tr></table></figure>
+
+<p>解决办法:</p>
+<ul>
+<li><p>挂几天试试<br>万一企鹅大发慈悲给你解除风控了呢</p>
+</li>
+<li><p>企业账号<br>企业账号是不会风控的，就是开通费有亿点点贵。</p>
+</li>
+<li><p>换个号<br>换个qq号吧，就当续命了</p>
+</li>
+</ul>
+</div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <h5 itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "https://deja-vu.eu.org/2022/11/15/momoko/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "https://deja-vu.eu.org/2022/11/15/momoko/";
+            const title         = "「桃桃Bot帮助文档」";
+            const excerpt       = `桃桃Bot此项目是基于 Nonebot2 和 go-cqhttp 的QQ群聊娱乐机器人借(chao)鉴(xi)了大佬们的代码，实现了一些对群友的娱乐功能和实用功能（大概  
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+...`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/NoneBot/" rel="tag">NoneBot</a>, <a class="tag-none-link" href="/tags/OneBot/" rel="tag">OneBot</a>, <a class="tag-none-link" href="/tags/Python/" rel="tag">Python</a>, <a class="tag-none-link" href="/tags/go-cqhttp/" rel="tag">go-cqhttp</a>, <a class="tag-none-link" href="/tags/%E6%A1%83%E6%A1%83Bot/" rel="tag">桃桃Bot</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2022-11-15T14:14:44.890Z" itemprop="dateModified">最后编辑：2022-11-15</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" 白嫖eu.org域名教程" href="/2022/09/08/free-eu-org/">&lt; 上一篇</a>
+            </div>
+            
+            
+        </nav>
+    
+    
+        <div class="post-comments lazy-load">
+    <div id="tcomment"></div>
+</div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            twikoo.init({ envId: 'https://25pkw9hefnf7xzs7rdwvcgevmgrhrp.vercel.app', el: '#tcomment' });
+        }
+        if (typeof twikoo === 'undefined') {
+            const src = '/vendors/twikoo@1.5.11/dist/twikoo.all.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://twikoo.js.org/">comments powered by Twikoo.</a></noscript>
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center">与君初相识, 犹似故人归.</p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                2
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                2
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                8
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                    <aside id="krw-toc" class="widget widget-kratos-toc clearfix toc-div-class" >
+    <div class="photo-background"></div>
+    <h4 class="widget-title no-after">
+        <i class="fa fa-compass"></i>
+        文章目录
+        <span class="toc-progress-bar" role="progressbar" aria-label="阅读进度："></span>
+    </h4>
+    <div class="textwidget">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A1%83%E6%A1%83Bot"><span class="toc-text">桃桃Bot</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#NoneBot2"><span class="toc-text">NoneBot2</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E"><span class="toc-text">声明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E5%88%97%E8%A1%A8"><span class="toc-text">功能列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#PicSearch-%E6%90%9C%E5%9B%BE"><span class="toc-text">PicSearch  搜图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#anti-abuse-%E5%98%B4%E8%87%AD%E5%B1%8F%E8%94%BD"><span class="toc-text">anti_abuse  嘴臭屏蔽</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#anti-flash-%E5%8F%8D%E9%97%AA%E7%85%A7"><span class="toc-text">anti_flash  反闪照</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#anti-recall-%E5%8F%8D%E6%92%A4%E5%9B%9E"><span class="toc-text">anti_recall  反撤回</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#bhbdm-%E4%B8%8D%E4%BC%9A%E7%99%BE%E5%BA%A6%E4%B9%88%EF%BC%9F"><span class="toc-text">bhbdm  不会百度么？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#caiyun-ai-AI%E7%BB%AD%E5%86%99"><span class="toc-text">caiyun_ai  AI续写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DirectLinker-%E7%BE%A4%E6%96%87%E4%BB%B6%E7%9B%B4%E9%93%BE%E6%8F%90%E5%8F%96"><span class="toc-text">DirectLinker  群文件直链提取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#echo-%E8%AF%B4"><span class="toc-text">echo  说</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#eventdone-%E5%A5%BD%E5%8F%8B%E6%B7%BB%E5%8A%A0%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86"><span class="toc-text">eventdone  好友添加事件处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#fake-msg-%E4%BC%AA%E9%80%A0%E5%90%88%E5%B9%B6%E8%BD%AC%E5%8F%91%E6%B6%88%E6%81%AF"><span class="toc-text">fake_msg  伪造合并转发消息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#look-like-%E4%BD%A0%E7%9C%8B%E6%88%91%E5%83%8F%E4%BA%BA%E5%90%97"><span class="toc-text">look_like  你看我像人吗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mockingbird-%E8%AE%A9bot%E5%8F%91%E8%AF%AD%E9%9F%B3"><span class="toc-text">mockingbird  让bot发语音</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#blacklist-%E9%BB%91%E5%90%8D%E5%8D%95"><span class="toc-text">blacklist  黑名单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rss-%E8%AE%A2%E9%98%85"><span class="toc-text">rss  订阅</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#simplemusic-%E7%82%B9%E6%AD%8C"><span class="toc-text">simplemusic  点歌</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#smart-reply-AI%E8%81%8A%E5%A4%A9"><span class="toc-text">smart_reply  AI聊天</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#status"><span class="toc-text">status</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tarot-%E6%8A%BD%E5%A1%94%E7%BD%97%E7%89%8C"><span class="toc-text">tarot  抽塔罗牌</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#wordbank2-%E4%BD%A0%E9%97%AE%E6%88%91%E7%AD%94"><span class="toc-text">wordbank2  你问我答</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#withdraw-%E6%92%A4%E5%9B%9E"><span class="toc-text">withdraw  撤回</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E6%96%B9%E5%BC%8F"><span class="toc-text">部署方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%9A%A0%E6%B3%A8%E6%84%8F"><span class="toc-text">⚠注意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%9A%A0%E5%96%9C%E6%8A%A5"><span class="toc-text">⚠喜报</span></a></li></ol></li></ol></li></ol>
+    </div>
+</aside>
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/">帮助文档</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><span class="category-list-count">1</span></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/NoneBot/" style="font-size: 0.6em;">NoneBot</a> <a href="/tags/OneBot/" style="font-size: 0.6em;">OneBot</a> <a href="/tags/Python/" style="font-size: 0.6em;">Python</a> <a href="/tags/eu-org/" style="font-size: 0.6em;">eu.org</a> <a href="/tags/go-cqhttp/" style="font-size: 0.6em;">go-cqhttp</a> <a href="/tags/%E5%9F%9F%E5%90%8D/" style="font-size: 0.6em;">域名</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.6em;">教程</a> <a href="/tags/%E6%A1%83%E6%A1%83Bot/" style="font-size: 0.6em;">桃桃Bot</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2022/11/15/momoko/"><i class="fa  fa-book"></i> 桃桃Bot帮助文档</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2022/09/08/free-eu-org/"><i class="fa  fa-book"></i> 白嫖eu.org域名教程</a>
+            
+          
+        
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        
+                        <li><a href="mailto:mailto:g2ekoftkr@mozmail.com"><i class="fa fa-envelope"></i></a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2022 Déjà Vu 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by Gas Halo.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="album"
+        id="2059733"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>
