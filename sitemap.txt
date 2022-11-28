@@ -1,3 +1,4 @@
+https://deja-vu.eu.org/2022/11/29/steam-turkey/
 https://deja-vu.eu.org/2022/11/15/momoko/
 https://deja-vu.eu.org/2022/09/08/free-eu-org/
 https://deja-vu.eu.org/
@@ -9,5 +10,8 @@ https://deja-vu.eu.org/tags/NoneBot/
 https://deja-vu.eu.org/tags/OneBot/
 https://deja-vu.eu.org/tags/go-cqhttp/
 https://deja-vu.eu.org/tags/Python/
+https://deja-vu.eu.org/tags/Steam/
+https://deja-vu.eu.org/tags/Turkey/
+https://deja-vu.eu.org/tags/%E5%9C%9F%E8%80%B3%E5%85%B6/
 https://deja-vu.eu.org/categories/%E6%95%99%E7%A8%8B/
 https://deja-vu.eu.org/categories/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/
