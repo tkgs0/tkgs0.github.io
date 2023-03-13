@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://deja-vu.eu.org/images/favicon.ico">
 <meta property="article:published_time" content="2022-11-15T20:00:00.000Z">
-<meta property="article:modified_time" content="2023-03-02T00:43:36.570Z">
+<meta property="article:modified_time" content="2023-03-13T16:40:28.270Z">
 <meta property="article:author" content="Gas Halo">
 <meta property="article:tag" content="桃桃Bot">
 <meta property="article:tag" content="NoneBot">
@@ -165,7 +165,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~6.27K
+                        ~6.45K
                     
                     字
                 </li>
@@ -181,7 +181,7 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1677717816570"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1678725628270"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
@@ -224,11 +224,15 @@
 
 
 <h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p>此项目仅用于学习交流，不可商用以及非法用途</p>
-<h2 id="功能表"><a href="#功能表" class="headerlink" title="功能表"></a>功能表</h2><ul>
+<h2 id="功能表"><a href="#功能表" class="headerlink" title="功能表"></a>功能表</h2><p>本项目支持使用 <code>nb-cli</code> 从 <a target="_blank" rel="noopener" href="https://v2.nonebot.dev/store">nonebot插件商店</a> 安装插件</p>
+<ul>
+<li><p><input disabled="" type="checkbox"> 
+<strong>插件控制</strong><br><del>暂时没有</del></p>
+</li>
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>涩图</strong> - setu</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line"><span class="string">/setu</span> &#123;数量&#125; &#123;关键词&#125;</span><br><span class="line"></span><br><span class="line">私聊<span class="params">(群聊)</span>启用<span class="params">(禁用)</span>涩图 qq qq1 qq2 <span class="string">...</span></span><br><span class="line">查看涩图设置</span><br><span class="line">切换涩图api       <span class="comment"># lolicon, acggov</span></span><br><span class="line">启用<span class="params">(禁用)</span>涩图    <span class="comment"># 在当前会话启用(禁用)涩图</span></span><br><span class="line">重置涩图          <span class="comment"># 重置涩图设置</span></span><br></pre></td></tr></table></figure>
 
@@ -240,7 +244,7 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>嘴臭屏蔽</strong> - anti abuse</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p>检测到有用户 <code>@机器人</code> 并嘴臭时将其临时屏蔽(bot重启后失效)</p>
 <p>当bot为群管理时会请对方喝昏睡红茶(禁言)</p>
@@ -250,7 +254,7 @@
 <li>被bot灌了昏睡红茶的用户不会进临时黑名单</li>
 <li>开启 <strong><code>对线模式</code></strong> 后不会被bot灌昏睡红茶和临时拉黑 (<del>因为要对线</del>)</li>
 </ul>
-<table>
+<table> 
   <tr align="center">
     <th> 指令 </th>
     <th> 权限 </th>
@@ -293,7 +297,7 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>黑名单</strong> - blacklist</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p>基于 <a target="_blank" rel="noopener" href="https://github.com/A-kirami">A-kirami</a> 的 <a target="_blank" rel="noopener" href="https://github.com/A-kirami/nonebot-plugin-namelist">黑白名单</a> 魔改(?)的仅黑名单插件</p>
 <p>超级用户不受黑名单影响</p>
@@ -306,6 +310,9 @@
 <p>查看黑名单:</p>
 <figure class="highlight"><table><tr><td class="code"><pre><span class="line">查看用户黑名单</span><br><span class="line">查看群聊黑名单</span><br><span class="line"></span><br><span class="line">重置黑名单</span><br></pre></td></tr></table></figure>
 
+<p>被禁言自动屏蔽该群:</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">自觉静默开</span><br><span class="line">自觉静默关</span><br></pre></td></tr></table></figure>
+
 <p>群内发送 <strong><code>/静默</code></strong>, <strong><code>/响应</code></strong> 可快捷拉黑&#x2F;解禁当前群聊</p>
 <p><code>拉黑/解禁所有</code> 只对已添加的群&#x2F;好友生效</p>
 </details>
@@ -313,7 +320,7 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>好友&#x2F;群聊管理</strong> - manager</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <figure class="highlight less"><table><tr><td class="code"><pre><span class="line">踢出群聊 <span class="variable">@qq</span> <span class="variable">@qq1</span> <span class="variable">@qq2</span> ...</span><br><span class="line">禁言 <span class="variable">@qq</span> <span class="variable">@qq1</span> <span class="variable">@qq2</span> ... XX分钟(/小时/天)</span><br><span class="line">解除禁言 <span class="variable">@qq</span> <span class="variable">@qq1</span> <span class="variable">@qq2</span> ...</span><br><span class="line">我要自闭 XX分钟(/小时/天)</span><br><span class="line">开启(关闭)全员禁言</span><br><span class="line">设为(撤销)管理 <span class="variable">@qq</span> <span class="variable">@qq1</span> <span class="variable">@qq2</span> ...</span><br><span class="line">允许(禁止)匿名</span><br><span class="line">修改名片(头衔) <span class="variable">@qq</span> <span class="variable">@qq1</span> <span class="variable">@qq2</span> ... XXXX</span><br><span class="line">设置群名 XXXX</span><br><span class="line">申请头衔 XXXX</span><br><span class="line">撤回    # 回复消息发送<span class="built_in">`撤回`</span></span><br></pre></td></tr></table></figure>
 
@@ -321,14 +328,18 @@
 <figure class="highlight scss"><table><tr><td class="code"><pre><span class="line">同意(拒绝)好友 FLAG 备注</span><br><span class="line">同意(拒绝)拉群 FLAG</span><br><span class="line"><span class="selector-attr">[群聊]</span> 同意(拒绝)入群 FLAG 理由</span><br><span class="line">## `备注` 和 `理由` 可省略</span><br><span class="line"></span><br><span class="line">查看好友(群聊)请求</span><br><span class="line">清空好友(入群/拉群)请求</span><br><span class="line"></span><br><span class="line">好友(拉群)自动同意(拒绝)</span><br><span class="line">关闭好友(拉群)自动</span><br><span class="line"></span><br><span class="line"><span class="selector-attr">[群聊]</span> 入群自动同意(拒绝)</span><br><span class="line"><span class="selector-attr">[群聊]</span> 关闭入群自动</span><br><span class="line"></span><br><span class="line">重置请求自动</span><br></pre></td></tr></table></figure>
 
 <p><strong>以下命令需要 <code>@机器人</code></strong> (私聊不用)</p>
-<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line">设置网名 XXXX</span><br><span class="line">查找好友<span class="params">(群)</span> qq qq1 qq2 <span class="string">...</span></span><br><span class="line">查看所有好友<span class="params">(群)</span></span><br><span class="line">查看单向好友</span><br><span class="line">退群 qq qq1 qq2 <span class="string">...</span>    <span class="comment"># 群号不存在时则退出当前群聊</span></span><br><span class="line">删除好友 qq qq1 qq2 <span class="string">...</span></span><br><span class="line">删除单向好友 qq qq1 qq2 <span class="string">...</span></span><br><span class="line">查看群员列表</span><br><span class="line">设置群头像[图片]    <span class="comment"># ⚠该API不稳定!</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line">设置网名 XXXX</span><br><span class="line">查找好友<span class="params">(群)</span> qq qq1 qq2 <span class="string">...</span></span><br><span class="line">查看所有好友<span class="params">(群)</span></span><br><span class="line">查看单向好友</span><br><span class="line">退群 qq qq1 qq2 <span class="string">...</span>    <span class="comment"># 未输入群号则退出当前群聊</span></span><br><span class="line">删除好友 qq qq1 qq2 <span class="string">...</span></span><br><span class="line">删除单向好友 qq qq1 qq2 <span class="string">...</span></span><br><span class="line">查看群员列表</span><br><span class="line">设置群头像[图片]    <span class="comment"># ⚠该API不稳定!</span></span><br></pre></td></tr></table></figure>
+
+
+<p><strong>关键词禁言</strong><br>可批量添加多个关键词, 以换行隔开</p>
+<figure class="highlight gcode"><table><tr><td class="code"><pre><span class="line">使用方式:</span><br><span class="line">  关键词<span class="comment">(/正则)</span>禁言 XX分<span class="comment">(/时/日/月)</span></span><br><span class="line">  [ocr]</span><br><span class="line">  内容<span class="number">1</span></span><br><span class="line">  内容<span class="number">2</span></span><br><span class="line">  内容<span class="number">3</span></span><br><span class="line"></span><br><span class="line">  删除禁言关键词<span class="comment">(/正则)</span></span><br><span class="line">  内容<span class="number">1</span></span><br><span class="line">  内容<span class="number">2</span></span><br><span class="line">  内容<span class="number">3</span></span><br><span class="line"></span><br><span class="line">  查看禁言关键词<span class="comment">(/正则)</span></span><br><span class="line"></span><br><span class="line">  清理群禁言规则 qq qq<span class="number">1</span> qq<span class="number">2</span> ...</span><br><span class="line">  <span class="attr"># 用于清理已炸或已退出的群聊残留的规则</span></span><br><span class="line"><span class="attr"></span></span><br><span class="line"><span class="attr">  /reset_keyword_ban_db</span></span><br><span class="line"><span class="attr">  # 重置数据库</span></span><br><span class="line"><span class="attr"></span></span><br><span class="line"><span class="attr">示例:</span></span><br><span class="line"><span class="attr">  关键词禁言 1</span>天</span><br><span class="line">  吃柠檬</span><br><span class="line">  尼玛</span><br><span class="line">  群主是沙壁</span><br><span class="line">  来点🐍图</span><br><span class="line"></span><br><span class="line">  正则禁言 <span class="number">30</span>天</span><br><span class="line">  http<span class="comment">(s)</span>?:<span class="comment">//.*</span></span><br><span class="line">  .*<span class="comment">(是|做)</span>.+的<span class="comment">(狗|猫)</span></span><br></pre></td></tr></table></figure>
 
 </details>
 </li>
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>自检</strong> - status</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p>移植自 <a target="_blank" rel="noopener" href="https://github.com/Kyomotoi">摸</a> 的 <a target="_blank" rel="noopener" href="https://github.com/Kyomotoi/ATRI">ATRI</a>, 改成了限超级用户使用</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/ping    <span class="comment"># 测试bot应答</span></span><br><span class="line"></span><br><span class="line">/status    <span class="comment"># 查看bot设备状态</span></span><br></pre></td></tr></table></figure>
@@ -338,21 +349,21 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>调用命令行</strong> - sys cmd</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p>调用系统命令行</p>
 <p>⚠危险操作, 谨慎使用!</p>
-<figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line">&gt;<span class="keyword">cmd</span><span class="language-bash"> &#123;命令&#125;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line">&gt;<span class="keyword">shell</span><span class="language-bash"> &#123;命令&#125;</span></span><br></pre></td></tr></table></figure>
 
 <p>示例:</p>
-<figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line">&gt;<span class="keyword">cmd</span><span class="language-bash"> <span class="built_in">echo</span> <span class="string">&quot;Hello World&quot;</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line">&gt;<span class="keyword">shell</span><span class="language-bash"> <span class="built_in">echo</span> <span class="string">&quot;Hello World&quot;</span></span></span><br></pre></td></tr></table></figure>
 
 </details>
 </li>
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>说</strong> - echo</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p><code>@机器人</code> 并加上 <strong>冒号</strong> <code>：</code> 发送你想让机器人说的话</p>
 <figure class="highlight gherkin"><table><tr><td class="code"><pre><span class="line"><span class="meta">@桃桃酱</span> ：xxxxx</span><br></pre></td></tr></table></figure>
@@ -363,10 +374,10 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>B链解析</strong> - analysis bilibili</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p>［被动插件］</p>
-<p>抄自 <a target="_blank" rel="noopener" href="https://github.com/mengshouer">mengshouer</a> <a target="_blank" rel="noopener" href="https://github.com/mengshouer/nonebot_plugin_analysis_bilibili">analysis_bilibili</a> 的 <a target="_blank" rel="noopener" href="https://github.com/NekoAria/nonebot_plugin_analysis_bilibili">NekoAria修改版</a></p>
+<p>抄自 <a target="_blank" rel="noopener" href="https://github.com/mengshouer">mengshouer</a>&#x2F;<a target="_blank" rel="noopener" href="https://github.com/mengshouer/nonebot_plugin_analysis_bilibili">analysis_bilibili</a> 的 <a target="_blank" rel="noopener" href="https://github.com/NekoAria/nonebot_plugin_analysis_bilibili">NekoAria修改版</a></p>
 <p>自动解析聊天中发送的 bilibili 小程序&#x2F;链接</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/NekoAria/nonebot_plugin_analysis_bilibili#%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F">▶使用方法</a></p>
 </details>
@@ -374,7 +385,7 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>反闪照</strong> - anti flash</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p>抄自 <a target="_blank" rel="noopener" href="https://github.com/MinatoAquaCrews">KafCoppelia</a> 的 <a target="_blank" rel="noopener" href="https://github.com/MinatoAquaCrews/nonebot_plugin_antiflash">AntiFlash</a></p>
 <p>在<code>env</code>内设置：</p>
@@ -394,7 +405,7 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>反撤回</strong> - anti recall</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p>移植自 <a target="_blank" rel="noopener" href="https://github.com/Kyomotoi">摸</a> 的 <a target="_blank" rel="noopener" href="https://github.com/Kyomotoi/ATRI">ATRI</a></p>
 <p>将检测到的撤回消息转发给超级用户</p>
@@ -403,7 +414,7 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>彩云小梦</strong> - caiyun ai</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p>抄自 <a target="_blank" rel="noopener" href="https://github.com/MeetWq">wq佬</a> 的 <a target="_blank" rel="noopener" href="https://github.com/noneplugin/nonebot-plugin-caiyunai">caiyunai</a></p>
 <p><strong>配置:</strong></p>
@@ -423,7 +434,7 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>在线跑代码</strong> - code runner</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p>移植自 <a target="_blank" rel="noopener" href="https://github.com/Kyomotoi">摸</a> 的 <a target="_blank" rel="noopener" href="https://github.com/Kyomotoi/ATRI">ATRI</a></p>
 <figure class="highlight dust"><table><tr><td class="code"><pre><span class="line"><span class="language-xml">&gt;code </span><span class="template-variable">&#123;语言&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml"></span><span class="template-variable">&#123;代码&#125;</span></span><br></pre></td></tr></table></figure>
@@ -437,7 +448,7 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>群文件直链提取</strong> - direct linker</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p>抄自 <a target="_blank" rel="noopener" href="https://github.com/ninthseason">ninthseason</a> 的 <a target="_blank" rel="noopener" href="https://github.com/Utmost-Happiness-Planet/nonebot-plugin-directlinker">DirectLinker</a></p>
 <p><a target="_blank" rel="noopener" href="https://github.com/Utmost-Happiness-Planet/nonebot-plugin-directlinker#%E7%94%A8%E6%B3%95">▶使用方法</a></p>
@@ -446,7 +457,7 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>合并转发</strong> - fake msg</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p>移植自 <a target="_blank" rel="noopener" href="https://github.com/Kyomotoi">摸</a> 的 <a target="_blank" rel="noopener" href="https://github.com/Kyomotoi/ATRI">ATRI</a></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/fakemsg</span><br><span class="line">qq号-昵称-消息内容</span><br></pre></td></tr></table></figure>
@@ -459,7 +470,7 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>你看我像</strong> - look like</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p><code>@机器人</code> 发送 <code>你看我像</code></p>
 <figure class="highlight gherkin"><table><tr><td class="code"><pre><span class="line"><span class="meta">@桃桃酱</span> 你看我像人吗？</span><br></pre></td></tr></table></figure>
@@ -467,22 +478,9 @@
 </details>
 </li>
 <li><p><input checked="" disabled="" type="checkbox"> 
-<strong>拟声鸟</strong> - mockingbird</p>
-<details>
-  <summary>▶使用方法</summary>
-
-<p>抄自 <a target="_blank" rel="noopener" href="https://github.com/AkashiCoin">白毛</a> 的 <a target="_blank" rel="noopener" href="https://github.com/AkashiCoin/nonebot_plugin_mockingbird">mockingbird</a></p>
-<figure class="highlight aspectj"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Bot</span> 说 [你想要bot说的话]</span><br></pre></td></tr></table></figure>
-
-<p>配置不够的设备使用该功能容易死机，所以修改了权限限制仅超级用户可用。<br>如果需要开放给所有用户使用的话，请将<code>plugins/mockingbird/__init__.py</code>第78行的<code>permission=SUPERUSER,</code>删掉</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">显示模型 # 显示出可供修改的模型</span><br><span class="line">修改模型 <span class="selector-attr">[序号]</span>\<span class="selector-attr">[模型名称]</span></span><br><span class="line">重载模型 进行模型重载(并没有什么卵用，或许以后内存泄漏解决会有用？)</span><br><span class="line">调整/修改精度 修改语音合成精度</span><br><span class="line">调整/修改句长 修改语音合成最大句长</span><br><span class="line">更新模型 更新模型列表</span><br></pre></td></tr></table></figure>
-
-</details>
-</li>
-<li><p><input checked="" disabled="" type="checkbox"> 
 <strong>搜图</strong> - PicSearch</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p>抄自 <a target="_blank" rel="noopener" href="https://github.com/NekoAria">NekoAria</a> 的 <a target="_blank" rel="noopener" href="https://github.com/NekoAria/YetAnotherPicSearch">YetAnotherPicSearch</a></p>
 <p>请参考原插件 <a target="_blank" rel="noopener" href="https://github.com/NekoAria/YetAnotherPicSearch/blob/main/docs/%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.md">▶使用方法️️</a></p>
@@ -491,7 +489,7 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>RSS订阅</strong> - rss</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p>抄自 <a target="_blank" rel="noopener" href="https://github.com/Quan666">Quan666</a> 的 <a target="_blank" rel="noopener" href="https://github.com/Quan666/ELF_RSS">ELF_RSS</a></p>
 <p><a target="_blank" rel="noopener" href="https://github.com/Quan666/ELF_RSS/blob/2.0/docs/2.0%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B.md">▶使用方法</a></p>
@@ -500,7 +498,7 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>点歌</strong> - simplemusic</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p>抄自 <a target="_blank" rel="noopener" href="https://github.com/MeetWq">wq佬</a> 的 <a target="_blank" rel="noopener" href="https://github.com/noneplugin/nonebot-plugin-simplemusic">SimpleMusic</a></p>
 <figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">点歌<span class="regexp">/qq点歌/</span>网易点歌<span class="regexp">/酷我点歌/</span>酷狗点歌<span class="regexp">/咪咕点歌/</span>b站点歌 + 关键词</span><br></pre></td></tr></table></figure>
@@ -514,7 +512,7 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>闲聊</strong> - smart reply</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p>抄自 <a target="_blank" rel="noopener" href="https://github.com/Special-Week">Special-Week</a> 的 <a target="_blank" rel="noopener" href="https://github.com/Special-Week/nonebot_plugin_smart_reply">SmartReply</a></p>
 <p><code>@机器人</code> + 你想对机器人说的骚话</p>
@@ -525,7 +523,7 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>塔罗牌</strong> - tarot</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <figure class="highlight gherkin"><table><tr><td class="code"><pre><span class="line"><span class="meta">@机器人</span> 抽塔罗牌</span><br></pre></td></tr></table></figure>
 
@@ -534,7 +532,7 @@
 <li><p><input checked="" disabled="" type="checkbox"> 
 <strong>词库问答</strong> (你问我答) - wordbank</p>
 <details>
-  <summary>▶使用方法</summary>
+  <summary>使用方法</summary>
 
 <p>抄自 <a target="_blank" rel="noopener" href="https://github.com/kexue-z">kexue</a> 的 <a target="_blank" rel="noopener" href="https://github.com/kexue-z/nonebot-plugin-word-bank2">wordbank2</a></p>
 <p><a target="_blank" rel="noopener" href="https://github.com/kexue-z/nonebot-plugin-word-bank2#%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8">▶使用方法</a></p>
@@ -575,7 +573,7 @@
 </li>
 <li><p>打开<strong>隐藏文件</strong> <code>.env</code>, 填写以下信息:</p>
 <details>
-  <summary>▶点击展开</summary>
+  <summary>点击展开</summary>
 
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">SUPERUSERS=[&quot;&quot;]  # 填写用于控制bot的超级用户QQ</span><br><span class="line"># 可填写多个 例如: [&quot;123456&quot;,&quot;654321&quot;]</span><br><span class="line"></span><br><span class="line">NICKNAME=[&quot;桃桃&quot;, &quot;桃桃酱&quot;]  # 机器人的昵称</span><br><span class="line"></span><br><span class="line">SETU_COOLDOWN=60  # 涩图的响应cd 为0则无冷却</span><br><span class="line">SETU_WITHDRAW=60  # 涩图的撤回cd &lt; 120 为0则不撤回</span><br><span class="line"></span><br><span class="line">LOLICON_R18=2  # Lolicon API设置</span><br><span class="line"># 0为非R18，1为R18，2为混合（在库中的分类，不等同于作品本身的 R-18 标识）</span><br><span class="line"></span><br><span class="line">PIXPROXY=&quot;&quot;  # pximg图片代理, 需要填写前缀 https:// 或 http://</span><br><span class="line"># 留空为直连 i.pximg.net</span><br><span class="line"></span><br><span class="line">ACGGOV_TOKEN=&quot;apikey&quot;</span><br><span class="line"></span><br><span class="line">ANTI_FLASH_GROUP=[&quot;&quot;]  # 填写默认开启 反闪照 的群聊, 可留空.</span><br><span class="line"># 可填写多个 例如: [&quot;123456&quot;,&quot;654321&quot;]</span><br><span class="line"></span><br><span class="line">SAUCENAO_API_KEY=&quot;&quot;  # 在引号里填写你在 saucenao.com 申请到的 apikey</span><br><span class="line"># 缺少该项将无法正常使用搜图.</span><br><span class="line"></span><br><span class="line">EXHENTAI_COOKIES=&quot;&quot;  # 在引号里填写你的 exhentai cookies, 可留空.</span><br><span class="line"></span><br><span class="line">CAIYUNAI_APIKEY=&quot;&quot;  # 在引号里填写你的 彩云小梦 apikey</span><br><span class="line"># 缺少该项将无法正常使用小梦续写功能.</span><br><span class="line"></span><br><span class="line">LINKER_GROUP=[&quot;&quot;]  # 填写启用群文件直链插件的群</span><br><span class="line">LINKER_COMMAND=&quot;link&quot;  # 设置插件触发命令（默认`link`）</span><br></pre></td></tr></table></figure>
 
@@ -583,9 +581,26 @@
 </li>
 <li><p>在命令行 <code>cd</code> 到本项目的目录</p>
 </li>
-<li><p>输入 <code>pip install -r requirements.txt</code> 安装环境依赖</p>
+<li><p>安装环境依赖 · 二选一</p>
+<details>
+  <summary>使用pip安装</summary>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+
+</details>
+<details>
+  <summary>使用poetry安装</summary>
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install --upgrade poetry</span><br><span class="line">poetry install</span><br></pre></td></tr></table></figure>
+
+</details>
 </li>
-<li><p>输入 <code>python bot.py</code> 启动机器人</p>
+<li><p>启动机器人</p>
+<ul>
+<li>常规用户使用:<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python bot.py</span><br></pre></td></tr></table></figure></li>
+<li><strong>poetry用户使用:</strong><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry run python bot.py</span><br></pre></td></tr></table></figure>
+<strong>或者</strong><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry shell</span><br><span class="line">python bot.py</span><br></pre></td></tr></table></figure></li>
+</ul>
 </li>
 <li><p>另开一个命令行窗口, <code>cd</code> 到本项目下的 <code>go-cqhttp</code> 文件夹</p>
 </li>
@@ -736,7 +751,7 @@
                     <a class="tag-none-link" href="/tags/NoneBot/" rel="tag">NoneBot</a>, <a class="tag-none-link" href="/tags/OneBot/" rel="tag">OneBot</a>, <a class="tag-none-link" href="/tags/Python/" rel="tag">Python</a>, <a class="tag-none-link" href="/tags/go-cqhttp/" rel="tag">go-cqhttp</a>, <a class="tag-none-link" href="/tags/%E6%A1%83%E6%A1%83Bot/" rel="tag">桃桃Bot</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2023-03-02T00:43:36.570Z" itemprop="dateModified">最后编辑：2023-03-02</time>
+                    <time datetime="2023-03-13T16:40:28.270Z" itemprop="dateModified">最后编辑：2023-03-13</time>
                 </div>
             </div>
         </footer>
