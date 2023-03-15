@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://deja-vu.eu.org/images/favicon.ico">
 <meta property="article:published_time" content="2022-11-15T20:00:00.000Z">
-<meta property="article:modified_time" content="2023-03-13T16:49:30.430Z">
+<meta property="article:modified_time" content="2023-03-15T03:34:32.440Z">
 <meta property="article:author" content="Gas Halo">
 <meta property="article:tag" content="桃桃Bot">
 <meta property="article:tag" content="NoneBot">
@@ -165,7 +165,7 @@
                     <i class="fa fa-edit"></i> 
                     
                     
-                        ~6.48K
+                        ~6.63K
                     
                     字
                 </li>
@@ -181,7 +181,7 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1678726170430"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1678851272440"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
@@ -589,18 +589,33 @@
 
 </details>
 <details>
-  <summary>⏩使用poetry安装</summary>
+  <summary>⏩使用poetry安装 (推荐)</summary>
 
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip install --upgrade poetry</span><br><span class="line">poetry install</span><br></pre></td></tr></table></figure>
 
 </details>
 </li>
-<li><p>启动机器人</p>
-<ul>
-<li>常规用户使用:<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python bot.py</span><br></pre></td></tr></table></figure></li>
-<li><strong>poetry用户使用:</strong><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry run python bot.py</span><br></pre></td></tr></table></figure>
-<strong>或者</strong><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry shell</span><br><span class="line">python bot.py</span><br></pre></td></tr></table></figure></li>
-</ul>
+<li><p>启动机器人<br><strong>根据你的安装方式选择启动方式</strong></p>
+<details>
+  <summary>⏩常规启动</summary>
+
+  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">python bot.py</span><br></pre></td></tr></table></figure>
+<p>  <strong>或者</strong></p>
+  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">nb run</span><br></pre></td></tr></table></figure>
+
+</details>
+<details>
+  <summary>⏩poetry启动</summary>
+
+  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry run python bot.py</span><br></pre></td></tr></table></figure>
+<p>  <strong>或者</strong></p>
+  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry run nb run</span><br></pre></td></tr></table></figure>
+<p>  <strong>或者</strong></p>
+  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry shell</span><br><span class="line">python bot.py</span><br></pre></td></tr></table></figure>
+<p>  <strong>或者</strong></p>
+  <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">poetry shell</span><br><span class="line">nb run</span><br></pre></td></tr></table></figure>
+
+</details>
 </li>
 <li><p>另开一个命令行窗口, <code>cd</code> 到本项目下的 <code>go-cqhttp</code> 文件夹</p>
 </li>
@@ -625,13 +640,14 @@
 <li>比如手机和电脑使用同一个WiFi, 或者电脑连接手机的热点.</li>
 </ul>
 </li>
-<li>使用<strong>密码登入</strong>, 在弹出需要验证的提示时选择<strong>扫码验证</strong></li>
+<li>在 gocq 的 <strong>config.yml</strong> 填写Bot的<strong>帐号</strong>和<strong>密码</strong>, 保存并关闭文件</li>
+<li>重新运行<strong>go-cqhttp</strong>, 在弹出需要验证的提示时选择<strong>扫码验证</strong></li>
 </ol>
 <p><strong>服务器用户同理:</strong></p>
-<ol start="3">
+<ol start="4">
 <li>下载对应你电脑系统的 <strong>go-cqhttp</strong> 到电脑上</li>
-<li>按照上面的 <strong>步骤1,2</strong> 操作</li>
-<li>登入成功后把生成的 <strong>device.json</strong> 和 <strong>session.token</strong> 拷到服务器上该项目的 <strong>go-cqhttp的文件夹里</strong></li>
+<li>按照上面的 <strong>步骤1,2,3</strong> 操作</li>
+<li>登入成功后把生成的 <strong>device.json</strong> 和 <strong>session.token</strong> 拷到服务器上该项目使用的<strong>go-cqhttp所在的文件夹里</strong></li>
 </ol>
 <h3 id="⚠喜报"><a href="#⚠喜报" class="headerlink" title="⚠喜报"></a>⚠喜报</h3><p>你可能会遇到以下问题:</p>
 <ul>
@@ -751,7 +767,7 @@
                     <a class="tag-none-link" href="/tags/NoneBot/" rel="tag">NoneBot</a>, <a class="tag-none-link" href="/tags/OneBot/" rel="tag">OneBot</a>, <a class="tag-none-link" href="/tags/Python/" rel="tag">Python</a>, <a class="tag-none-link" href="/tags/go-cqhttp/" rel="tag">go-cqhttp</a>, <a class="tag-none-link" href="/tags/%E6%A1%83%E6%A1%83Bot/" rel="tag">桃桃Bot</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2023-03-13T16:49:30.430Z" itemprop="dateModified">最后编辑：2023-03-13</time>
+                    <time datetime="2023-03-15T03:34:32.440Z" itemprop="dateModified">最后编辑：2023-03-15</time>
                 </div>
             </div>
         </footer>
